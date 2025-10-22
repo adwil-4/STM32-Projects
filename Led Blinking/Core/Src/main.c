@@ -99,9 +99,9 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, SET);
-	  HAL_Delay(200);
+	  HAL_Delay(500);
 	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, RESET);
-	  HAL_Delay(200);
+	  HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
