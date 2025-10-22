@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  000148cf  00000000  00000000  0000be7c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000743f  00000000  00000000  0002074b  2**0
+ 17 .debug_line   0000743b  00000000  00000000  0002074b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00081ef9  00000000  00000000  00027b8a  2**0
+ 18 .debug_str    00081ef9  00000000  00000000  00027b86  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000a9a83  2**0
+ 19 .comment      00000043  00000000  00000000  000a9a7f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000183c  00000000  00000000  000a9ac8  2**2
+ 20 .debug_frame  0000183c  00000000  00000000  000a9ac4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004b  00000000  00000000  000ab304  2**0
+ 21 .debug_line_str 0000004b  00000000  00000000  000ab300  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -406,55 +406,55 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10, GPIO_PIN_SET);
  8000518:	2201      	movs	r2, #1
- 800051a:	f44f 5180 	mov.w	r1, #4096	@ 0x1000
+ 800051a:	f44f 6180 	mov.w	r1, #1024	@ 0x400
  800051e:	481d      	ldr	r0, [pc, #116]	@ (8000594 <main+0x90>)
  8000520:	f000 fd20 	bl	8000f64 <HAL_GPIO_WritePin>
 	  HAL_Delay(500);
  8000524:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  8000528:	f000 fa8e 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10, GPIO_PIN_RESET);
  800052c:	2200      	movs	r2, #0
- 800052e:	f44f 5180 	mov.w	r1, #4096	@ 0x1000
+ 800052e:	f44f 6180 	mov.w	r1, #1024	@ 0x400
  8000532:	4818      	ldr	r0, [pc, #96]	@ (8000594 <main+0x90>)
  8000534:	f000 fd16 	bl	8000f64 <HAL_GPIO_WritePin>
- 	  HAL_Delay(500);
+	  HAL_Delay(500);
  8000538:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  800053c:	f000 fa84 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12, GPIO_PIN_SET);
  8000540:	2201      	movs	r2, #1
- 8000542:	f44f 6100 	mov.w	r1, #2048	@ 0x800
+ 8000542:	f44f 5180 	mov.w	r1, #4096	@ 0x1000
  8000546:	4813      	ldr	r0, [pc, #76]	@ (8000594 <main+0x90>)
  8000548:	f000 fd0c 	bl	8000f64 <HAL_GPIO_WritePin>
 	  HAL_Delay(500);
  800054c:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  8000550:	f000 fa7a 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12, GPIO_PIN_RESET);
  8000554:	2200      	movs	r2, #0
- 8000556:	f44f 6100 	mov.w	r1, #2048	@ 0x800
+ 8000556:	f44f 5180 	mov.w	r1, #4096	@ 0x1000
  800055a:	480e      	ldr	r0, [pc, #56]	@ (8000594 <main+0x90>)
  800055c:	f000 fd02 	bl	8000f64 <HAL_GPIO_WritePin>
-	  HAL_Delay(500);
+ 	  HAL_Delay(500);
  8000560:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  8000564:	f000 fa70 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11, GPIO_PIN_SET);
  8000568:	2201      	movs	r2, #1
- 800056a:	f44f 6180 	mov.w	r1, #1024	@ 0x400
+ 800056a:	f44f 6100 	mov.w	r1, #2048	@ 0x800
  800056e:	4809      	ldr	r0, [pc, #36]	@ (8000594 <main+0x90>)
  8000570:	f000 fcf8 	bl	8000f64 <HAL_GPIO_WritePin>
 	  HAL_Delay(500);
  8000574:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  8000578:	f000 fa66 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11, GPIO_PIN_RESET);
  800057c:	2200      	movs	r2, #0
- 800057e:	f44f 6180 	mov.w	r1, #1024	@ 0x400
+ 800057e:	f44f 6100 	mov.w	r1, #2048	@ 0x800
  8000582:	4804      	ldr	r0, [pc, #16]	@ (8000594 <main+0x90>)
  8000584:	f000 fcee 	bl	8000f64 <HAL_GPIO_WritePin>
- 	  HAL_Delay(500);
+	  HAL_Delay(500);
  8000588:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
  800058c:	f000 fa5c 	bl	8000a48 <HAL_Delay>
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10, GPIO_PIN_SET);
  8000590:	bf00      	nop
  8000592:	e7c1      	b.n	8000518 <main+0x14>
  8000594:	40020000 	.word	0x40020000
