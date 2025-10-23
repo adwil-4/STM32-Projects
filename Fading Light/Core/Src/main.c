@@ -107,11 +107,11 @@ int main(void)
     /* USER CODE END WHILE */
 	  for(int i=0;i<=255;i++){
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
-		  HAL_Delay(1);
+		  HAL_Delay(5);
 	  }
 	  for(int i=255;i>=0;i--){
 	  		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
-	  		  HAL_Delay(1);
+	  		  HAL_Delay(5);
 	  }
     /* USER CODE BEGIN 3 */
   }
