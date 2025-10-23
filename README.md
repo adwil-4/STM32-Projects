@@ -9,3 +9,6 @@ RGB Blinking
 
 SERVO Rotation
 ![alt text](Servo.jpg)
+
+LED Fade
+![alt text](<Fading Light.jpg>)
