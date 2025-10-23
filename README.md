@@ -6,3 +6,6 @@ LED Blinking
 
 RGB Blinking
 ![alt text](RGB.jpg)
+
+SERVO Rotating
+![alt text](Servo.jpg)
